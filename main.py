@@ -2,7 +2,7 @@ import yaml
 
 from analyzer.rbac_parser import parse_roles
 from analyzer.privilege_analyzer import analyze_roles
-from llm.llm_client import generate_llm_recommendations
+from llm.llm_client_mock import generate_llm_recommendations
 from report.report_generator import generate_report
 
 
