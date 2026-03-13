@@ -1,0 +1,42 @@
+RBAC SECURITY AUDIT REPORT
+========================================
+Generated: 2026-03-12 18:32:03.459620
+
+FINDINGS
+----------------------------------------
+Finding 1
+Role: insecure-role
+Issue: Wildcard permissions
+
+Finding 2
+Role: insecure-role
+Issue: Dangerous permission
+Permission: *
+
+Finding 3
+Role: insecure-role
+Issue: Access to critical resource
+Resource: secrets
+
+
+RECOMMENDATIONS
+----------------------------------------
+Issue: Wildcard permissions
+Recommendation:
+
+Role uses wildcard permissions (*).
+It is recommended to restrict verbs to the minimal required set
+(get, list, watch) according to the principle of least privilege.
+
+
+Issue: Dangerous permission
+Recommendation:
+Review RBAC permissions and apply least privilege principle.
+
+Issue: Access to critical resource
+Recommendation:
+
+Role has access to critical resource 'secrets'.
+Access should be limited only to trusted service accounts.
+
+
